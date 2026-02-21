@@ -1,0 +1,12 @@
+[package]
+name = "twitch_clob"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "clob_engine"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.20", features = ["extension-module"] }
+orderbook-rs = "0.5.0"
